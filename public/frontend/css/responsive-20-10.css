@@ -1,0 +1,81 @@
+@media (max-width: 1920px) {
+    .deal-wheel {
+        --size: clamp(250px, 58vmin, 700px);
+    }
+}
+
+@media (max-width: 1400px) {
+    .deal-wheel {
+        --size: clamp(250px, 52vmin, 700px);
+    }
+}
+
+
+@media (max-width: 1199px) {
+ 
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 768px) {
+    .blast{
+        margin-left: -40px;
+        opacity: 0.9;
+    }
+    
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+    .blast{
+        margin-left: 0px;
+    }
+    .deal-wheel {
+        --size: clamp(250px, 72vmin, 700px);
+    }
+
+    .container .error_page{
+        width: 96%;
+    }
+}
+
+@media (max-width: 560px) {
+    .deal-wheel {
+        --size: clamp(250px, 80vmin, 700px);
+    }
+}
+
+@media (max-width: 480px) {
+    .deal-wheel {
+        --size: clamp(250px, 72vmin, 700px);
+    }
+    .content .text h1{
+        font-size: 4rem;
+    }
+    .camping_box {
+        height: 313px !important;
+    }
+
+    .camping_box h3{
+        font-size: 16px;
+        margin-top: 5px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .deal-wheel {
+        --size: clamp(250px, 72vmin, 700px);
+    }
+    .camping_box {
+        height: 313px;
+    }
+}
+
+@media (max-width: 360px) {
+
+}

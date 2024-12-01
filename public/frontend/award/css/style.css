@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');
+
+
+
+.content {}
+
+.content .trophy img {
+    display: block;
+    margin: auto;
+    max-width: 128px;
+    filter: drop-shadow(0 0 4px #000);
+    transition: 0.5s;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.content .text h1 {
+    font-weight: 900;
+    font-size: 6rem;
+    color: #222324;
+    text-shadow: 8px 0px 0px #FABE2C;
+}

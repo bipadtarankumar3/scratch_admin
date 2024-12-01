@@ -1,0 +1,98 @@
+/* .page-wrapper{
+    background-image: url(../images/backgrounds/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+} */
+
+body{
+    background-image: url('../images/backgrounds/bg2.jpg');
+}
+
+.sidebar-nav {
+    background: rgb(255,230,242);
+background: linear-gradient(184deg, rgba(255,230,242,0.8100490196078431) 0%, rgba(42,162,227,1) 100%);
+}
+
+.card-header{
+    background: rgb(255,230,242);
+    background: linear-gradient(184deg, rgba(255,230,242,0.8100490196078431) 0%, rgba(42,162,227,1) 100%);
+    color: white;
+}
+
+.card-header h5{
+    color: white;
+}
+
+.btn{
+    border-radius: 0px;
+}
+
+
+
+
+
+/* -----------------------QR---------------------------- */
+.qr_box{
+    text-align: center;
+    border: 1px solid black;
+    
+}
+.qr_text_section{
+    height: 110px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #3074f1;
+    color: white;
+    border-radius: 0px 0px 100% 100%;
+    padding: 30px;
+}
+.qr_text_section h2{
+    color: white;
+    font-weight: 800;font-size: 35px;margin-top:10px;
+}
+
+.qr_logo_section{
+    height: 150px;
+}
+
+.qr_desc_section {
+    padding: 0px 50px 0px 50px;
+}
+
+.qr_logo_section img{
+    height: inherit;
+}
+.qr_desc_google{
+    height: 91px;
+    padding: 0px 50px 0px 50px;
+}
+.qr_desc_google img{
+    height: 90px;
+                width: 55%;
+}
+
+.qr_desc_power_by{
+    margin-top:0.7rem;
+    height: 38px;
+    margin-bottom: 10px;
+}
+
+.qr_desc_power_by .power_by{
+    height: 20px;
+}
+
+.qr_desc_power_by .logo{
+    height: 29px;
+}
+.yellow_box{
+    height: 5px;
+    background-color: yellow;
+}
+
+/* -----------------------QR End---------------------------- */
+
+
