@@ -14,10 +14,10 @@
                 <div class="mb-2">
                     <div class="row">
                         <div class="col-md-10">
-                            <h5 class="mb-0 mt-2">Campaign List</h5>
+                            <h5 class="mb-0">Camping  List</h5>
                         </div>
                         <div class="col-md-2">
-                            <a href="{{URL::to('admin/add_camping_page')}}" class="btn btn-info">Add Campaign</a>
+                            
                         </div>
                     </div>
                     
@@ -26,12 +26,11 @@
             </div>
             <div class="card-body">
                 
-
                 <div class="row my-4">
                     <div class="col-md-2"></div>
                     <div class="col-md-8 text-center">
                         <h4 class="">Search</h4>
-                        <form action="{{URL::to('admin/camping_list')}}" method="post">
+                        <form action="{{URL::to('admin/scratchcard_form_camping_list')}}" method="post">
                             @csrf
                             
                             <div class="row search-box">
@@ -64,7 +63,7 @@
                     <div class="col-md-2"></div>
 
             </div>
-            <form action="{{URL::to('admin/downloadCampaignPdf')}}" method="post">
+            <form action="{{URL::to('admin/downloadFormCampingPdf')}}" method="post">
                 @csrf
                     <div class="row my-3">
                         <div class="col-md-12">
@@ -79,38 +78,29 @@
                             <tr>
                                 <th><input name="" class="select_all" id="select_all" type="checkbox" ></th>
                                 <th>Sl.</th>
-                                <th>Campaign name</th>
-                                <th>Title</th>
-                                <th>Sub Title</th>
+                                <th>Name</th>
                                 <th>Start Date</th>
                                 <th>End Date</th>
                                 <th>Total Form</th>
-                                <th>Scratch %</th>
-                                <th>Number of total spinn</th>
-                                <th>Status</th>
+                                <th>Pending Form</th>
                                 <th>Action</th>
                             </tr>
                             <!-- end row -->
                         </thead>
                         <tbody>
 
-                            @foreach ($camping as $key=> $item)
+                            @foreach ($ScratchcardForm as $key=> $item)
                                 <!-- start row -->
                                 <tr>
                                     <td><input name="checkbox[]" class="checkbox" type="checkbox"  value="{{$item->id}}"></td>
                                     <td>{{$key+1}}</td>
                                     <td>{{$item->campaign_name}}</td>
-                                    <td>{{$item->title}}</td>
-                                    <td>{{$item->sub_title}}</td>
                                     <td>{{$item->start_date}}</td>
                                     <td>{{$item->end_date}}</td>
+                                    <td>{{$item->form_submitted+$item->total_form}}</td>
                                     <td>{{$item->total_form}}</td>
-                                    <td>{{$item->scratch_time}}</td>
-                                    <td>{{$item->number_of_total_spinn}}</td>
-                                    <td>{{$item->status}}</td>
-                                    <td>
-                                        <a href="{{URL::to('admin/edit_camping/'.$item->id)}}"><i class="fas fa-edit"></i></a>
-                                        <a href="{{URL::to('admin/delete_camping/'.$item->id)}}"  onclick="dataDelete(event)"><i class="fas fa-trash-alt"></i></a>
+                                    <td class="text-center">
+                                        <a href="{{URL::to('admin/scratchcard_form_list/'.$item->id)}}"><i class="fas fa-eye"></i></a>
                                     </td>
                                 </tr>
                                 <!-- end row --> 
@@ -136,9 +126,8 @@
 
 @section('js')
     <script>
-
             
-    $('#select_all').on('click',function(){
+            $('#select_all').on('click',function(){
         if(this.checked){
             $('.checkbox').each(function(){
                 this.checked = true;

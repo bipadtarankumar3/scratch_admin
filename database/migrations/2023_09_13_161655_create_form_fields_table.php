@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('address')->nullable();
             $table->string('choose_option')->nullable();
             $table->string('screenshot')->nullable();
+            $table->string('screenshot_required')->nullable();
             $table->string('user_id');
             $table->timestamps();
         });

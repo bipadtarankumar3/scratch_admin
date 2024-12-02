@@ -122,7 +122,7 @@ class CampingController extends Controller
                     'end_date' => $request->end_date,
                     'validity_status' => $request->validity_status,
                     // 'total_form' => $request->total_form,
-                    'spinner_time' => $request->spinner_time,
+                    'scratch_time' => $request->scratch_time,
                     'number_of_total_spinn' => $request->number_of_total_spinn,
                     'created_by' => Auth::user()->id,
                     'status' => $request->status
@@ -157,7 +157,7 @@ class CampingController extends Controller
                     'end_date' => $request->end_date,
                     'validity_status' => $request->validity_status,
                     // 'total_form' => $request->total_form,
-                    'spinner_time' => $request->spinner_time,
+                    'scratch_time' => $request->scratch_time,
                     'number_of_total_spinn' => $request->number_of_total_spinn,
                     'created_by' => Auth::user()->id,
                     'status' => $request->status

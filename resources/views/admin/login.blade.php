@@ -42,7 +42,7 @@
             <div class="col-xl-5 col-xxl-4">
               <div class="authentication-login min-vh-100 bg-body row justify-content-center align-items-center p-4">
                 <div class="col-sm-8 col-md-6 col-xl-9">
-                  <h2 class="mb-3 fs-7 fw-bolder">Welcome to Prize Wheel</h2>
+                  <h2 class="mb-3 fs-7 fw-bolder">Welcome to Scratch card</h2>
                   <p class=" mb-9">Login To Access Your Dashboard</p>
                   
                   <form method="POST" action="{{URL::to('login_post')}}">

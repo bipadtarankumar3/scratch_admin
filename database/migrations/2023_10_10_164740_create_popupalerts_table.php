@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->text('title');
             $table->text('popup_img');
+            $table->string('user_type');
+            $table->string('user_id');
             $table->string('status')->nullable();
             $table->timestamps();
         });

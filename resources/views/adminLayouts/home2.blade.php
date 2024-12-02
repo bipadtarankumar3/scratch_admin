@@ -139,13 +139,21 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
+                  <a class="sidebar-link" href="{{URL::to('admin/scratchcard_list')}}" aria-expanded="false">
+                    <span>
+                      <i class="ti ti-circle-dotted"></i>
+                    </span>
+                    <span class="hide-menu">Scratch Card</span>
+                  </a>
+                </li>
+                {{-- <li class="sidebar-item">
                   <a class="sidebar-link" href="{{URL::to('admin/spinner_list')}}" aria-expanded="false">
                     <span>
                       <i class="ti ti-circle-dotted"></i>
                     </span>
                     <span class="hide-menu">Spinner</span>
                   </a>
-                </li>
+                </li> --}}
                 <li class="sidebar-item">
                   <a class="sidebar-link" href="{{URL::to('admin/spinner_form_camping_list')}}" aria-expanded="false">
                     <span>

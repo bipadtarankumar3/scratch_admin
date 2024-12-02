@@ -156,7 +156,7 @@
               <div class="round rounded bg-success d-flex align-items-center justify-content-center">
                 <i class="ti ti-user-circle text-white" style="font-size: 30px;"></i>
               </div>
-              <h6 class="mb-0 ms-3">Total Create Spinner</h6>
+              <h6 class="mb-0 ms-3">Total Create Card</h6>
               <div class="ms-auto text-success d-flex align-items-center">
                 {{-- <i class="ti ti-trending-up text-success fs-6 me-1"></i>
                 <span class="fs-2 fw-bold">sas</span> --}}
@@ -177,7 +177,7 @@
               <div class="round rounded bg-success d-flex align-items-center justify-content-center">
                 <i class="ti ti-user-circle text-white" style="font-size: 30px;"></i>
               </div>
-              <h6 class="mb-0 ms-3">Total Spin</h6>
+              <h6 class="mb-0 ms-3">Total Card</h6>
               <div class="ms-auto text-success d-flex align-items-center">
                 {{-- <i class="ti ti-trending-up text-success fs-6 me-1"></i>
                 <span class="fs-2 fw-bold">sas</span> --}}

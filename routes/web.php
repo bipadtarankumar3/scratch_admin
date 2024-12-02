@@ -13,6 +13,7 @@ use App\Http\Controllers\PrivateReviewController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\PopupalertController;
+use App\Http\Controllers\ScratchCardController;
 
 
 
@@ -150,6 +151,21 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::any('spinner_form_list/{id}', [SpinnerController::class,'spinner_form_list']);
     Route::any('delete_spinner_form_list/{id}', [SpinnerController::class,'delete_spinner_form_list']);
     // ----------------- Spinner End------------------------
+
+    // ----------------- scratch ------------------------
+    Route::any('scratchcard_list', [ScratchCardController::class,'scratchcard_list']);
+    Route::get('add_scratchcard_page', [ScratchCardController::class,'add_scratchcard_page']);
+    Route::get('scratchcard_form', [ScratchCardController::class,'scratchcard_form']);
+    Route::post('add_scratchcard', [ScratchCardController::class,'add_scratchcard']);
+    Route::post('download_scratchcard_pdf', [ScratchCardController::class,'download_scratchcard_pdf']);
+    Route::get('edit_scratchcard/{id}', [ScratchCardController::class,'edit_scratchcard']);
+    Route::get('delete_scratchcard/{id}', [ScratchCardController::class,'delete_scratchcard']);
+    Route::any('scratchcard_form_camping_list', [ScratchCardController::class,'scratchcard_form_camping_list']);
+    Route::post('downloadFormCampingPdf', [ScratchCardController::class,'downloadFormCampingPdf']);
+    Route::post('downloadscratchcardFormListPdf', [ScratchCardController::class,'downloadscratchcardFormListPdf']);
+    Route::any('scratchcard_form_list/{id}', [ScratchCardController::class,'scratchcard_form_list']);
+    Route::any('delete_scratchcard_form_list/{id}', [ScratchCardController::class,'delete_scratchcard_form_list']);
+    // ----------------- scratch End------------------------
 
 
     // ----------------- Private Review ------------------------

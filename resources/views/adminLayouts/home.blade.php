@@ -139,19 +139,27 @@
                   </a>
                 </li>
                 <li class="sidebar-item">
+                  <a class="sidebar-link" href="{{URL::to('admin/scratchcard_list')}}" aria-expanded="false">
+                    <span>
+                      <i class="ti ti-circle-dotted"></i>
+                    </span>
+                    <span class="hide-menu">Scratch Card</span>
+                  </a>
+                </li>
+                {{-- <li class="sidebar-item">
                   <a class="sidebar-link" href="{{URL::to('admin/spinner_list')}}" aria-expanded="false">
                     <span>
                       <i class="ti ti-circle-dotted"></i>
                     </span>
                     <span class="hide-menu">Spinner</span>
                   </a>
-                </li>
+                </li> --}}
                 <li class="sidebar-item">
-                  <a class="sidebar-link" href="{{URL::to('admin/spinner_form_camping_list')}}" aria-expanded="false">
+                  <a class="sidebar-link" href="{{URL::to('admin/scratchcard_form_camping_list')}}" aria-expanded="false">
                     <span>
                       <i class="ti ti-rotate-clockwise-2"></i>
                     </span>
-                    <span class="hide-menu">Spinner Enquiry</span>
+                    <span class="hide-menu">Card Enquiry</span>
                   </a>
                 </li>
                 <li class="sidebar-item">
@@ -170,14 +178,14 @@
                     <span class="hide-menu">Form Fields Access</span>
                   </a>
                 </li>
-                <li class="sidebar-item">
+                {{-- <li class="sidebar-item">
                   <a class="sidebar-link" href="{{URL::to('admin/ip_skip')}}" aria-expanded="false">
                     <span>
                       <i class="ti ti-notes"></i>
                     </span>
                     <span class="hide-menu">IP Skip</span>
                   </a>
-                </li>
+                </li> --}}
                 <li class="sidebar-item">
                   <a class="sidebar-link" href="{{URL::to('admin/notice')}}" aria-expanded="false">
                     <span>
@@ -268,7 +276,7 @@
               </a> --}}
               <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
 
-                @if(Auth::user()->type == 'user')
+                {{-- @if(Auth::user()->type == 'user')
                 <li class="nav-item dropdown">
                   <form action="{{URL::to('admin/change_spin_mode')}}" method="POST">
                     @csrf
@@ -288,7 +296,7 @@
                   </form>
                   
                 </li>
-                @endif
+                @endif --}}
 
                 <li class="nav-item dropdown">
                   <a class="nav-link pe-0" href="javascript:void(0)" id="drop1" data-bs-toggle="dropdown"

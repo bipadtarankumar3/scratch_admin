@@ -100,16 +100,10 @@
                     <div class="row">
                       
                       
-                      <!--<div class="col-sm-12 col-md-6">-->
-                      <!--  <div class="mb-3">-->
-                      <!--    <label for="inputEmail3" class="control-label col-form-label">Total Forms (How many time customers can be submitted)</label>-->
-                      <!--    <input type="text" name="total_form"  @if (isset($camping)) value="{{$camping->total_form}}"  @endif class="form-control" id="total_form" placeholder="value Here">-->
-                      <!--  </div>-->
-                      <!--</div>-->
                       <div class="col-sm-12 col-md-6">
                         <div class="mb-3">
-                          <label for="inputEmail3" class="control-label col-form-label">Spinner time ( Recommend time 15 - 20 second)</label>
-                          <input type="number" name="spinner_time" onkeyup="second_validate(this)" @if (isset($camping)) value="{{$camping->spinner_time}}"  @endif  min="10" max="60" class="form-control" id="total_form" placeholder="value Here">
+                          <label for="inputEmail3" class="control-label col-form-label">Scratch % ( Recommend time 45 - 50 %)</label>
+                          <input type="number" name="scratch_time" onkeyup="second_validate(this)" @if (isset($camping)) value="{{$camping->scratch_time}}"  @endif  min="10" max="60" class="form-control" id="total_form" placeholder="value Here">
                         </div>
                       </div>
                       <div class="col-sm-12 col-md-6">
