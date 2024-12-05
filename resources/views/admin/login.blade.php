@@ -4,7 +4,7 @@
 <!-- Mirrored from demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/html/minisidebar/authentication-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 05:23:45 GMT -->
 <head>
     <!-- Title -->
-    <title>Digital Spin Wheel</title>
+    <title>Scratch Card</title>
     <!-- Required Meta Tag -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,12 +31,12 @@
       <div class="position-relative overflow-hidden radial-gradient min-vh-100">
         <div class="position-relative z-index-5">
           <div class="row">
-            <div class="col-xl-7 col-xxl-8">
+            <div class="col-xl-7 col-xxl-8" style="border-right: 3px solid red;">
               <a href="index.html" class="text-nowrap logo-img d-block px-4 py-9 w-100">
                 {{-- <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/logos/dark-logo.svg" width="180" alt=""> --}}
               </a>
               <div class="d-none d-xl-flex align-items-center justify-content-center" style="height: calc(100vh - 80px);">
-                <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/backgrounds/login-security.svg" alt="" class="img-fluid" width="500">
+                <img src="{{URL::to('adminAssets/images/login.jpg')}}" alt="" class="img-fluid" width="500">
               </div>
             </div>
             <div class="col-xl-5 col-xxl-4">
@@ -64,7 +64,7 @@
                       </div>--}}
                       <a class="text-primary fw-medium" href="{{URL::to('forgotPassword')}}">Forgot Password ?</a>
                     </div> 
-                    <button type="submit" class="btn btn-primary w-100 py-8 mb-4 rounded-2">Sign In</button>
+                    <button type="submit" class="btn btn-success w-100 py-8 mb-4 rounded-2">Sign In</button>
                     
                   </form>
                 </div>

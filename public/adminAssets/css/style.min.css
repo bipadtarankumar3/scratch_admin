@@ -37633,10 +37633,10 @@ html[dir="rtl"] .welcome-bg-img {
 }
 .sidebar-nav ul .sidebar-item .sidebar-link:hover {
   background-color: rgba(93, 135, 255, 0.1);
-  color: #5d87ff;
+  color: #d8dbe3;
 }
 .sidebar-nav ul .sidebar-item .sidebar-link:hover.has-arrow::after {
-  border-color: #5d87ff;
+  border-color: #d8dbe3;
 }
 .sidebar-nav ul .sidebar-item .sidebar-link.active:hover.has-arrow::after {
   border-color: #fff;
@@ -37650,7 +37650,7 @@ html[dir="rtl"] .welcome-bg-img {
 }
 .sidebar-nav ul .sidebar-item .first-level .sidebar-item .sidebar-link:hover {
   background-color: transparent;
-  color: #5d87ff;
+  color: #d8dbe3;
 }
 .sidebar-nav
   ul
@@ -37658,7 +37658,7 @@ html[dir="rtl"] .welcome-bg-img {
   .first-level
   .sidebar-item
   .sidebar-link.active.has-arrow::after {
-  border-color: #5d87ff;
+  border-color: #d8dbe3;
 }
 .sidebar-nav ul .sidebar-item .first-level .sidebar-item > .sidebar-link {
   padding: 8px 10px;
@@ -46061,7 +46061,7 @@ ul {
   height: 100%;
   width: 100%;
   opacity: 0.3;
-  background: radial-gradient(#d2f1df, #d3d7fa, #bad8f4) 0 0/400% 400%;
+  background: radial-gradient(#ffffff, #ffffff, #ffffff) 0 0 / 400% 400%;
   animation: 15s ease 0s infinite normal none running gradient;
 }
 .linear-gradient {
